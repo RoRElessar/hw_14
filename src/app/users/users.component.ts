@@ -25,7 +25,7 @@ export class UsersComponent implements OnInit {
       });
   }
 
-  getPostId(event) {
+  getUserId(event) {
     this.userId = event;
     this.subscription = this.httpService.get(this.httpService.endpoints.posts + this.userId)
       .subscribe(posts => {

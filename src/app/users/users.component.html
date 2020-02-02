@@ -3,7 +3,7 @@
     <div class="col-lg-6">
       <ul class="list-group">
         <li class="list-group-item" *ngFor="let user of users">
-          <app-user [user]="user" (userId)="getPostId($event)"></app-user>
+          <app-user [user]="user" (userId)="getUserId($event)"></app-user>
         </li>
       </ul>
     </div>
