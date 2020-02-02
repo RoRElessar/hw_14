@@ -14,7 +14,7 @@ export class UserComponent {
 
   constructor() {}
 
-  getPosts(id: number, event: Event) {
+  passUserId(id: number, event: Event) {
     this.userId.emit(id);
     event.preventDefault();
   }
